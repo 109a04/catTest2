@@ -15,19 +15,19 @@ public class Move : MonoBehaviour
       {
         if (Input.GetKey("w"))
         {
-            Cat.transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            Cat.transform.Translate(Vector3.right * -speed * Time.deltaTime);
         }
         if (Input.GetKey("s"))
         {
-            Cat.transform.Translate(Vector3.forward * -speed * Time.deltaTime);
+            Cat.transform.Translate(Vector3.right * speed * Time.deltaTime);
         }
         if (Input.GetKey("a"))
         {
-            Cat.transform.Translate(Vector3.right * -speed * Time.deltaTime);
+            Cat.transform.Translate(Vector3.forward * -speed * Time.deltaTime);
         }
         if (Input.GetKey("d"))
         {
-            Cat.transform.Translate(Vector3.right * speed * Time.deltaTime);
+            Cat.transform.Translate(Vector3.forward * speed * Time.deltaTime);
         }
       }
 }
